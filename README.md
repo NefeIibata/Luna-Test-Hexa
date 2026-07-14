@@ -19,7 +19,7 @@ This repository contains a **Playable Ad** built with Unity and ported to WebGL 
 ## 🚀 Luna Integration & Optimization
 The project strictly adheres to ad network standards:
 - **API Integration:** Essential methods for analytics and store redirection (`Luna.Unity.LifeCycle.GameEnded()` and `Luna.Unity.Playable.InstallFullGame()`) are fully implemented.
-- **Size Optimization:** The final build output is aggressively optimized and weighs only **1.49 MB** (well under the strict 4.8 MB limit), guaranteeing instant loading within mobile apps.
+- **Size Optimization:** The final build output is aggressively optimized and weighs only **1.49 MB**, guaranteeing instant loading within mobile apps.
 - **Physics Synchronization:** The code is adapted to handle Ammo.js quirks within Playworks (resolving a 1-frame physics lag issue).
 
 ## 📂 Project Structure
