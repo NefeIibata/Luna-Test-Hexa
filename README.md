@@ -2,30 +2,30 @@
 
 ![Preview](Luna-Test-Hexa-Preview.gif)
 
-## 🎮 О проекте (About the Project)
-Этот репозиторий содержит **Playable Ad** (играбельный рекламный креатив), созданный на базе Unity и портированный под WebGL с помощью движка **Luna Playworks**. Проект разработан в рамках технического тестового задания и демонстрирует создание легких, оптимизированных и вовлекающих мини-игр для рекламных сетей (ironSource, AppLovin, Unity Ads и др.).
+## 🎮 About the Project
+This repository contains a **Playable Ad** built with Unity and ported to WebGL using the **Luna Playworks** engine. The project was developed as a technical test task to demonstrate the ability to create lightweight, highly optimized, and engaging mini-games for ad networks (ironSource, AppLovin, Unity Ads, etc.).
 
-### 🌟 Ключевые фичи
-- **Механика Hexa Sort:** Приятный пазл, в котором игрок перетаскивает стопки цветных шестиугольников на сетку для их слияния.
-- **Сочные анимации:** Плавное перемещение фишек, прыжки, слияние и UI-эффекты, реализованные с помощью `LeanTween`.
-- **Интерактивный туториал:** Анимация руки, которая автоматически появляется, если игрок бездействует (AFK), и подсказывает следующий шаг.
-- **Пэкшот (Packshot):** Финальный экран призыва к действию (CTA) с пульсирующей кнопкой, плавно появляющийся после завершения игры или по таймеру.
+### 🌟 Core Features
+- **Hexa Sort Mechanics:** A satisfying puzzle where the player drags stacks of colored hexagons onto a grid to merge them.
+- **Juicy Animations:** Smooth chip movement, bouncing, merging, and UI effects implemented via `LeanTween`.
+- **Interactive Tutorial:** A hand animation that automatically appears if the player is idle (AFK) to guide their next move.
+- **Packshot:** A final Call to Action (CTA) screen with a pulsating button, appearing smoothly after game completion or when the timer runs out.
 
-## 🛠 Технические детали
-- **Движок:** Unity
-- **Фреймворк сборки:** Luna Playworks (Creative Library)
-- **Архитектура и код:** Чистый, слабосвязанный C# код (разделен на `MergeManager`, `StackController`, `PackshotManager` и т.д.). Во всем проекте поддерживается строгий единый стиль (например, `_privateFields` и `PublicFields`).
+## 🛠 Technical Details
+- **Engine:** Unity
+- **Build Framework:** Luna Playworks (Creative Library)
+- **Architecture & Code:** Clean, loosely coupled C# code (separated into `MergeManager`, `StackController`, `PackshotManager`, etc.). A strict unified coding style is maintained throughout the project (e.g., `_privateFields` and `PublicFields`).
 
-## 🚀 Интеграция Luna & Оптимизация
-Проект строго следует стандартам рекламных сетей:
-- **Интеграция API:** Подключены необходимые для аналитики и редиректа методы `Luna.Unity.LifeCycle.GameEnded()` и `Luna.Unity.Playable.InstallFullGame()`.
-- **Оптимизация размера:** Финальный билд, собранный для `create-hub`, весит значительно меньше требуемых 4.8 МБ, что гарантирует мгновенную загрузку в мобильных приложениях.
-- **Синхронизация физики:** Код адаптирован под особенности работы Ammo.js внутри Playworks (решена проблема с отставанием физики на 1 кадр).
+## 🚀 Luna Integration & Optimization
+The project strictly adheres to ad network standards:
+- **API Integration:** Essential methods for analytics and store redirection (`Luna.Unity.LifeCycle.GameEnded()` and `Luna.Unity.Playable.InstallFullGame()`) are fully implemented.
+- **Size Optimization:** The final build output for `create-hub` is significantly under the strict 4.8 MB limit, guaranteeing instant loading within mobile apps.
+- **Physics Synchronization:** The code is adapted to handle Ammo.js quirks within Playworks (resolving a 1-frame physics lag issue).
 
-## 📂 Структура проекта
-- `Assets/Scripts/`: Вся логика геймплея, таймера и UI.
-- `Assets/Prefabs/`: Оптимизированные префабы гексов и сетки.
-- `Assets/LeanTween/`: Быстрый и легковесный движок для анимаций, идеально подходящий для Playable Ads.
+## 📂 Project Structure
+- `Assets/Scripts/`: Core gameplay, timer, and UI logic.
+- `Assets/Prefabs/`: Optimized hex and grid prefabs.
+- `Assets/LeanTween/`: A fast, lightweight animation engine perfectly suited for Playable Ads.
 
 ---
-*Создано для демонстрации навыков разработки Playable Ads с использованием Unity Playworks Plugin.*
+*Created as a showcase of Playable Ad development skills using the Unity Playworks Plugin.*
